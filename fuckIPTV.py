@@ -155,7 +155,6 @@ if args.target:
                     outputFile.write(fetched)
                     outputFile.close()            
                     found += 1
-                    counter += 1
             except urllib2.HTTPError, e:
                 print "Ops, HTTPError exception here. Cannot fetch the current URL " + newURL + " (" + str(e.code) + ")"
                 error += 1
