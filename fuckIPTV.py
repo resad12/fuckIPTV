@@ -148,7 +148,7 @@ if args.target:
                 # IF the fetched content is not empty
                 # we build the dedicated .m3u file
                 if len(fetched) > 0:
-                    newPath = outputDir + "/" + args.language + "/" + args.target.replace("http://", "")
+                    newPath = outputDir + "/target/" + args.target.replace("http://", "")
                     if os.path.exists(newPath) is False:
                         os.makedirs(newPath)
                     outputFile = open(str(newPath) + "/tv_channels_%s.m3u" % row.rstrip().lstrip(), "w")
